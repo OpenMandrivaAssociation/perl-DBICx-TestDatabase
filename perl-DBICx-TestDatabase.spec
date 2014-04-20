@@ -1,5 +1,5 @@
 %define upstream_name    DBICx-TestDatabase
-%define upstream_version 0.02
+%define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -18,6 +18,7 @@ BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(SQL::Translator)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(ok)
+BuildRequires:	perl(strictures)
 BuildArch:	noarch
 
 %description
@@ -43,16 +44,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 0.20.0-2mdv2011.0
-+ Revision: 654903
-- rebuild for updated spec-helper
-
-* Sun Nov 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.20.0-1mdv2011.0
-+ Revision: 471224
-- import perl-DBICx-TestDatabase
-
-
-* Sun Nov 29 2009 cpan2dist 0.02-1mdv
-- initial mdv release, generated with cpan2dist

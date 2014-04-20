@@ -1,2 +1,4 @@
+removed_sources:
+  DBICx-TestDatabase-0.02.tar.gz: 16935864a5ef035a506c1a03537540b79afa3b70
 sources:
-  "DBICx-TestDatabase-0.02.tar.gz": 16935864a5ef035a506c1a03537540b79afa3b70
+  DBICx-TestDatabase-0.05.tar.gz: b078453ec4d3e4da5d6a6798db83103386caa3ec
